@@ -8,10 +8,6 @@
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
-    "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.sayantan1234.carbongo"
-    },
     "web": {
       "bundler": "metro",
       "output": "single",
@@ -36,6 +32,9 @@
       "package": "com.sayantan1234.carbongo",
       "versionCode": 1,
       "gradleVersion": "8.0.1"
+    },
+    "ios": {
+      "bundleIdentifier": "com.sayantan1234.carbongo"
     }
   }
 }
