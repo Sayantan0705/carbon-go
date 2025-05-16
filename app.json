@@ -9,7 +9,8 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sayantan1234.carbongo"
     },
     "web": {
       "bundler": "metro",
@@ -30,6 +31,11 @@
         "projectId": "76c47d0a-d2dc-4e66-8439-77328984e9a6"
       }
     },
-    "owner": "sayantan1234"
+    "owner": "sayantan1234",
+    "android": {
+      "package": "com.sayantan1234.carbongo",
+      "versionCode": 1,
+      "gradleVersion": "8.0.1"
+    }
   }
 }

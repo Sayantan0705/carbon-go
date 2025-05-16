@@ -1,0 +1,29 @@
+{
+  "build": {
+    "development": {
+      "distribution": "internal",
+      "android": {
+        "gradleCommand": ":app:assembleDebug",
+        "buildType": "apk"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "production": {
+      "android": {
+        "gradleCommand": ":app:assembleRelease",
+        "gradleProperties": {
+          "org.gradle.jvmargs": "-Xmx2048m -XX:MaxMetaspaceSize=512m",
+          "android.enableJetifier": "true",
+          "android.useAndroidX": "true"
+        },
+        "buildType": "apk",
+        "image": "ubuntu-18.04-android-30-ndk-r19c"
+      }
+    }
+  }
+}
